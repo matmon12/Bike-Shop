@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <button class="menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="overlay"></div>
+                        <a class="logo" href="index.html">
+                            <img class="logo__img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <div class="header__select-box">
+                            <select class="header__select" multiple="true">
+                                <option>Forward 11</option>
+                                <option>Stels</option>
+                                <option>Alpine</option>
+                                <option>Benelli</option>
+                                <option>Centurion</option>
+                                <option>Kellys</option>
+                                <option>Forward 17</option>
+                            </select>
+                            <button class="header__btn"></button>
+                        </div>
+                        <p class="header__address header__top-address">Москва, ул. Лесная 25</p>
+                        <div class="header__box">
+                            <a class="header__box-login" href="#">
+                                <img src="images/login.svg" alt="icon">
+                            </a>
+                            <a class="header__box-heart" href="#">
+                                <img src="images/heart.svg" alt="icon">
+                            </a>
+                            <a class="header__box-basket" href="#">
+                                <img src="images/basket.svg" alt="icon">
+                                <div class="header__basket-number"><span>1</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#">О нас</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="category.html">Каталог</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#">Новости</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#">Контакты</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#">Акции</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#">Адрес</a>
+                        </li>
+                    </ul>
+                    <p class="header__address header__bottom-address">Москва, ул. Лесная 25</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__list-item">
+                                <a class="breadcrumbs__list-link" href="index.html">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a class="breadcrumbs__list-link" href="category.html">Каталог</a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a class="breadcrumbs__list-link" href="catalog.html">Велосипеды</a>
+
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <span class="breadcrumbs__list-link">Forward</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="product-card page-section">
+                <div class="container">
+                    <div class="product-card__inner">
+                        <div class="product-card__galery">
+                            <div class="swiper product-card__slider">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide product-card__slider-item">
+                                    <img src="images/content/tovar-1.png" />
+                                  </div>
+                                  <div class="swiper-slide crop product-card__slider-item">
+                                    <img src="images/content/tovar-2.png" />
+                                  </div>
+                                  <div class="swiper-slide crop product-card__slider-item">
+                                    <img src="images/content/tovar-3.png" />
+                                  </div>
+                                </div>
+                                <div class="swiper-button-prev product-card__slider-btn"></div>
+                                <div class="swiper-button-next product-card__slider-btn"></div>
+                              </div>
+                              <div class="swiper product-card__slider-thumbs" thumbsSlider="">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide slider-thumbs-item">
+                                    <img src="images/content/tovar-1.png" />
+                                  </div>
+                                  <div class="swiper-slide slider-thumbs-item crop">
+                                    <img src="images/content/tovar-2.png" />
+                                  </div>
+                                  <div class="swiper-slide slider-thumbs-item crop">
+                                    <img src="images/content/tovar-3.png" />
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <h1 class="product-card__title">Alpine Bike 1000SL</h1>
+                            <p class="product-card__code">Артикул: 2200000000026</p>
+                            <div class="product-card__box">
+                                <a class="product-card__rating" href="#">
+                                    <div class="rating">
+                                        <div class="rating__body"></div>
+                                        <div class="rating__body"></div>
+                                        <div class="rating__body"></div>
+                                        <div class="rating__body"></div>
+                                        <div class="rating__body"></div>
+                                        <div class="rating__value">3.5</div>
+                                    </div>
+                                </a>
+                                <a class="product-card__heart" href="#"><img src="images/heart-2.svg" alt="icon"></a>
+                                <a class="product-card__share" href="#"><img src="images/share.svg" alt="icon"></a>
+                            </div>
+                            <div class="product-card__price-old">29900 ₽</div>
+                            <div class="product-card__price-new">20 900 руб.</div>
+                            <p class="product-card__available">В наличии</p>
+                            <p class="product-card__transit">Доставка по Московской области бесплатно</p>
+                            <div class="product-card__sale">
+                                <a class="product-card__link" href="#">Купить сейчас</a>
+                                <button class="product-card__btn">Добавить в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card-info page-section">
+                <div class="container">
+                    <div class="card-info__inner">
+                        <div class="card-info-line">
+                            <div class="tabs card-info__tabs">
+                                <a class="tab card-info__tab" href="#info-1">О товаре</a>
+                                <a class="tab card-info__tab tab--active" href="#info-2">Характеристики</a>
+                                <a class="tab card-info__tab" href="#info-3">Отзывы</a>
+                                <a class="tab card-info__tab" href="#info-4">Самовывоз</a>
+                                <a class="tab card-info__tab" href="#info-5">Доставка</a>
+                                <a class="tab card-info__tab" href="#info-6">Cервис</a>
+                                <a class="tab card-info__tab" href="#info-7">Гарантия</a>
+                            </div>
+                        </div>
+                        
+                        <div class="tabs-wrapper card-info__wrapper">
+                            <div id="info-1" class="tabs-content card-info__content">content-1</div>
+                            <div id="info-2" class="tabs-content card-info__content tabs-content--active">
+                                <p class="card-info__text">Женский велосипед начального уровня с оборудованием любительского класса SRAM, 21 скорость. Технические особенности: алюминиевая рама Сплав 6061, амортизированная вилка ZOOM CH-327, двойные обода JALCO XC168, надежные ободные тормоза CHANGSTAR VB-992DK. Подходит для поездок по городским паркам, улицам и по маршрутам средней сложности в лесу. Диаметр колес 26 дюймов, вес 13 кг.
+                                </p>
+                                <div class="card-info__lists">
+                                    <ul class="card-info__list">
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Рама</p>
+                                            <p class="card-info__list-info">Сплав Алюминий 6061</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Вилка</p>
+                                            <p class="card-info__list-info">ZOOM CH-327 SUSPENSION FORK, 50MM</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Манетки</p>
+                                            <p class="card-info__list-info">SRAM X3 TRIGGER</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Тормоза</p>
+                                            <p class="card-info__list-info">CHANGSTAR VB-992DK V-BRAKE</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Передняя втулка</p>
+                                            <p class="card-info__list-info">JoeTech JY-431F 36H</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Задняя втулка</p>
+                                            <p class="card-info__list-info">JoeTech JY-432R 36H</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Передний переключатель</p>
+                                            <p class="card-info__list-info">MICROSSHIFT FD-M22</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="card-info__list">
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Задний переключатель</p>
+                                            <p class="card-info__list-info">SRAM X3 BLACK 7/8-SPEED</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Система</p>
+                                            <p class="card-info__list-info">PROWHEEL MY-A641 ALLOY, 170MM</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Каретка</p>
+                                            <p class="card-info__list-info">PROWHEEL</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Тип тормозов</p>
+                                            <p class="card-info__list-info">Ободные механические</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Обода</p>
+                                            <p class="card-info__list-info">JALCO XC168, ALLOY 14Gx36H</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Кассета</p>
+                                            <p class="card-info__list-info">SHIMANO TOURNEY MF-TZ31</p>
+                                        </li>
+                                        <li class="card-info__list-item">
+                                            <p class="card-info__list-title">Ход вилки</p>
+                                            <p class="card-info__list-info">50</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="info-3" class="tabs-content card-info__content">content-3</div>
+                            <div id="info-4" class="tabs-content card-info__content">content-4</div>
+                            <div id="info-5" class="tabs-content card-info__content">content-5</div>
+                            <div id="info-6" class="tabs-content card-info__content">content-6</div>
+                            <div id="info-7" class="tabs-content card-info__content">content-7</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product page-section">
+                <div class="container">
+                    <div class="product__inner">
+                        <h1 class="product__title">Похожие товары</h1>
+                        <div class="product-content">
+                            <div class="swiper-object">
+                                <div class="swiper swiper-container-1 product-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide product-slide">
+                                            <div class="product-slide-wrapper">
+                                                <button class="product-slide__heart" type="button"></button>
+                                                <button class="product-slide__basket"></button>
+                                                <button class="product-slide__btn">Купить в 1 клик</button>
+                                                <a class="product-slide__notify-link" href="#"><span>Сообщить о
+                                                        поступлении</span></a>
+                                                <a class="product-slide__link product-slide--sale" href="product.html">
+                                                    <div class="product-slide__box">
+                                                        <div class="swiper swiper-container-2 picture-slider">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img"
+                                                                        src="images/content/product-1.png" alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img"
+                                                                        src="images/content/product-1.png" alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img"
+                                                                        src="images/content/product-1.png" alt="velo"></div>
+                                                            </div>
+                                                            <div class="swiper-button-prev picture-button-prev"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                            <div class="swiper-button-next picture-button-next"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="product-slide__title">Forward F20g</h6>
+                                                    <p class="product-slide__price-old">39 900 ₽</p>
+                                                    <p class="product-slide__price-new">29 900 ₽</p>
+                                                    <p class="product-slide__notify-text">нет в наличии</p>
+                                                </a>
+                                            </div>
+    
+                                        </div>
+                                        <div class="swiper-slide product-slide product-slide__not-available">
+                                            <div class="product-slide-wrapper">
+                                                <button class="product-slide__heart" type="button"></button>
+                                                <button class="product-slide__basket"></button>
+                                                <button class="product-slide__btn">Купить в 1 клик</button>
+                                                <a class="product-slide__notify-link" href="#"><span>Сообщить о
+                                                        поступлении</span></a>
+                                                <a class="product-slide__link product-slide--sale" href="product.html">
+                                                    <div class="product-slide__box">
+                                                        <div class="swiper swiper-container-2 picture-slider">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img"
+                                                                        src="images/content/product-2.png" alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img"
+                                                                        src="images/content/product-2.png" alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img"
+                                                                        src="images/content/product-2.png" alt="velo"></div>
+                                                            </div>
+                                                            <div class="swiper-button-prev picture-button-prev"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                            <div class="swiper-button-next picture-button-next"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="product-slide__title">Forward F20g</h6>
+                                                    <p class="product-slide__price-old">39 900 ₽</p>
+                                                    <p class="product-slide__price-new">29 900 ₽</p>
+                                                    <p class="product-slide__notify-text">нет в наличии</p>
+                                                </a>
+                                            </div>
+    
+                                        </div>
+                                        <div class="swiper-slide product-slide">
+                                            <div class="product-slide-wrapper">
+                                                <button class="product-slide__heart" type="button"></button>
+                                                <button class="product-slide__basket"></button>
+                                                <button class="product-slide__btn">Купить в 1 клик</button>
+                                                <a class="product-slide__notify-link" href="#"><span>Сообщить о
+                                                        поступлении</span></a>
+                                                <a class="product-slide__link" href="product.html">
+                                                    <div class="product-slide__box">
+                                                        <div class="swiper swiper-container-2 picture-slider">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-3.png"
+                                                                        alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-3.png"
+                                                                        alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-3.png"
+                                                                        alt="velo"></div>
+                                                            </div>
+                                                            <div class="swiper-button-prev picture-button-prev"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                            <div class="swiper-button-next picture-button-next"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="product-slide__title">Forward F20g</h6>
+                                                    <p class="product-slide__price-old">39 900 ₽</p>
+                                                    <p class="product-slide__price-new">29 900 ₽</p>
+                                                    <p class="product-slide__notify-text">нет в наличии</p>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="swiper-slide product-slide product-slide__not-available">
+                                            <div class="product-slide-wrapper">
+                                                <button class="product-slide__heart" type="button"></button>
+                                                <button class="product-slide__basket"></button>
+                                                <button class="product-slide__btn">Купить в 1 клик</button>
+                                                <a class="product-slide__notify-link" href="#"><span>Сообщить о
+                                                        поступлении</span></a>
+                                                <a class="product-slide__link" href="product.html">
+                                                    <div class="product-slide__box">
+                                                        <div class="swiper swiper-container-2 picture-slider">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-1.png"
+                                                                        alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-1.png"
+                                                                        alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-1.png"
+                                                                        alt="velo"></div>
+                                                            </div>
+                                                            <div class="swiper-button-prev picture-button-prev"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                            <div class="swiper-button-next picture-button-next"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="product-slide__title">Forward F20g</h6>
+                                                    <p class="product-slide__price-old">39 900 ₽</p>
+                                                    <p class="product-slide__price-new">29 900 ₽</p>
+                                                    <p class="product-slide__notify-text">нет в наличии</p>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="swiper-slide product-slide">
+                                            <div class="product-slide-wrapper">
+                                                <button class="product-slide__heart" type="button"></button>
+                                                <button class="product-slide__basket"></button>
+                                                <button class="product-slide__btn">Купить в 1 клик</button>
+                                                <a class="product-slide__notify-link" href="#"><span>Сообщить о
+                                                        поступлении</span></a>
+                                                <a class="product-slide__link product-slide--sale" href="product.html">
+                                                    <div class="product-slide__box">
+                                                        <div class="swiper swiper-container-2 picture-slider">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-2.png"
+                                                                        alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-2.png"
+                                                                        alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-2.png"
+                                                                        alt="velo"></div>
+                                                            </div>
+                                                            <div class="swiper-button-prev picture-button-prev"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                            <div class="swiper-button-next picture-button-next"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="product-slide__title">Forward F20g</h6>
+                                                    <p class="product-slide__price-old">39 900 ₽</p>
+                                                    <p class="product-slide__price-new">29 900 ₽</p>
+                                                    <p class="product-slide__notify-text">нет в наличии</p>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="swiper-slide product-slide">
+                                            <div class="product-slide-wrapper">
+                                                <button class="product-slide__heart" type="button"></button>
+                                                <button class="product-slide__basket"></button>
+                                                <button class="product-slide__btn">Купить в 1 клик</button>
+                                                <a class="product-slide__notify-link" href="#"><span>Сообщить о
+                                                        поступлении</span></a>
+                                                <a class="product-slide__link product-slide--sale" href="product.html">
+                                                    <div class="product-slide__box">
+                                                        <div class="swiper swiper-container-2 picture-slider">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-3.png"
+                                                                        alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-3.png"
+                                                                        alt="velo"></div>
+                                                                <div class="swiper-slide picture-slide"><img
+                                                                        class="picture__img" src="images/content/product-3.png"
+                                                                        alt="velo"></div>
+                                                            </div>
+                                                            <div class="swiper-button-prev picture-button-prev"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                            <div class="swiper-button-next picture-button-next"><img
+                                                                    src="images/arrow-slider-mini.svg" alt=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="product-slide__title">Forward F20g</h6>
+                                                    <p class="product-slide__price-old">39 900 ₽</p>
+                                                    <p class="product-slide__price-new">29 900 ₽</p>
+                                                    <p class="product-slide__notify-text">нет в наличии</p>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="swiper-button-prev product-button-prev">
+                                    <img src="images/arrow-slider.svg" alt="">
+                                </div>
+                                <div class="swiper-button-next product-button-next">
+                                    <img src="images/arrow-slider.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__box">
+                            <a class="logo" href="index.html">
+                                <img class="logo__img" src="images/logo.svg" alt="logo">
+                            </a>
+                            <div class="footer__media">
+                                <a class="footer__media-icon" href="#">
+                                    <img src="images/instagram.svg" alt="icon">
+                                </a>
+                                <a class="footer__media-icon" href="#">
+                                    <img src="images/facebook.svg" alt="icon">
+                                </a>
+                                <a class="footer__media-icon" href="#">
+                                    <img src="images/vk.svg" alt="icon">
+                                </a>
+                                <a class="footer__media-icon" href="#">
+                                    <img src="images/youtube.svg" alt="icon">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="footer__list footer__list--active">
+                            <li class="footer__list-item">
+                                <p class="footer__list-title footer__list-title--active">Информация</p>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">О компании</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Контакты</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Акции</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Магазины</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list footer__list--active">
+                            <li class="footer__list-item">
+                                <p class="footer__list-title footer__list-title--active">Интернет-магазин</p>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Доставка и самовывоз</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Оплата</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Возврат-обмен</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Новости</a>
+                            </li>
+                        </ul>
+                        <div class="footer__contacts">
+                            <p class="footer__contacts-item">Москва, ул. Науки 25</p>
+                            <a class="footer__contacts-item" href="tel:+79001112233">+7 (900) 111-22-33</a>
+                            <a class="footer__contacts-item" href="mailto:promair@mail.ru">promair@mail.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__bottom-text">© ООО Velosiped </p>
+                        <a class="footer__bottom-link" href="#"><span>Политика конфидициальности</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
