@@ -1,20 +1,20 @@
-<h1 align="center">Travel 3D</h1>
+<h1 align="center">Bike Shop</h1>
 <div align="center" id="top">
-<img src="./src/img/screen.png" alt="logo" >
+<img src="./app/images/screen.png" alt="logo" >
 </div>
 &#xa0;
 
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/matmon12/Travel-Three-JS?color=903db1">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/matmon12/Bike-Shop?color=903db1">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/matmon12/Travel-Three-JS?color=d36449">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/matmon12/Bike-Shop?color=d36449">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/matmon12/Travel-Three-JS?color=4cc71e">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/matmon12/Bike-Shop?color=4cc71e">
 
-  <img alt="License" src="https://img.shields.io/github/license/matmon12/Travel-Three-JS?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/matmon12/Bike-Shop?color=56BEB8">
 
-  <img alt="Github stars" src="https://img.shields.io/github/stars/matmon12/Travel-Three-JS?color=56BEB8" />
+  <img alt="Github stars" src="https://img.shields.io/github/stars/matmon12/Bike-Shop?color=56BEB8" />
 </p>
 
 
@@ -32,22 +32,26 @@
 
 ## :dart: About
 
-Website using Three.js. Implemented page-by-page scrolling to which various animations on the stage are attached. The code for implementing the grass was taken from here https://codepen.io/al-ro/pen/GRJzYQK.
+Online store selling bicycles. The layout was completed and functionality was created in js. Implemented bread crumbs, product card, star rating and more.
 
 ## :sparkles: Features
 
-:heavy_check_mark: Animations;\
-:heavy_check_mark: Page scrolling;\
-:heavy_check_mark: Optimization;\
+:heavy_check_mark: Search by product;\
+:heavy_check_mark: Form Validation;\
+:heavy_check_mark: Playing videos on the site;\
+:heavy_check_mark: Slider with product photos;\
+:heavy_check_mark: Tabs, star rating, breadcrumbs, filters, price range;\
 :heavy_check_mark: Adaptive for mobile devices;
 
 ## :rocket: Technologies
 
 The following tools were used in this project:
 
-- [Three.js](https://threejs.org/)
-- [Tween.js](https://github.com/tweenjs/tween.js)
-- [Fullpage.js](https://alvarotrigo.com/fullPage/ru)
+- [JustValidate](https://just-validate.dev/)
+- [Video.js](https://videojs.com/)
+- [Swiper.js](https://swiperjs.com/)
+- [noUiSlider.js](https://refreshless.com/nouislider/)
+- [Choices.js](https://choices-js.github.io/Choices/)
 
 ## :white_check_mark: Requirements
 
@@ -57,19 +61,19 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/matmon12/Travel-Three-JS
+$ git clone https://github.com/matmon12/Bike-Shop
 
 # Access
-$ cd Travel-Three-JS
+$ cd Bike-Shop
 
 # Install dependencies
 $ npm install
 
 # Run the project
-$ npm run start
+$ gulp
 
 # Compiles and minifies for production
-$ npm run build-prod
+$ gulp build
 ```
 
 ## :memo: License
